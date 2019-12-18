@@ -1,6 +1,6 @@
 # dotfiles
 
-My dotfiles (minimalist).
+My dotfiles.
 
 ## Installation
 
