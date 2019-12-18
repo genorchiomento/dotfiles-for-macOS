@@ -80,7 +80,8 @@ brew cask install lisanet-gimp
 brew cask install telegram
 brew cask install whatsapp
 brew cask install vlc
-
+brew cask install google-chrome
+brew cask install firefox
 
 # Remove outdated versions from the cellar.
 brew cleanup
