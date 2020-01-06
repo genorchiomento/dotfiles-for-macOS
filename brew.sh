@@ -82,6 +82,8 @@ brew cask install whatsapp
 brew cask install vlc
 brew cask install google-chrome
 brew cask install firefox
+brew cask install postman
+brew cask install iterm2
 
 # Remove outdated versions from the cellar.
 brew cleanup
