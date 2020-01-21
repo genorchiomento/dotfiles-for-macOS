@@ -85,5 +85,9 @@ brew cask install firefox
 brew cask install postman
 brew cask install iterm2
 
+#Install java 8
+brew tap adoptopenjdk/openjdk
+brew cask install adoptopenjdk8
+
 # Remove outdated versions from the cellar.
 brew cleanup
