@@ -51,6 +51,8 @@ brew tap bramstein/webfonttools
 brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
+brew tap homebrew/cask-fonts
+brew cask install font-fantasque-sans-mono
 
 # Install other useful binaries.
 brew install ack
