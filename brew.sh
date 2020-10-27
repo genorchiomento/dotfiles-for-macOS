@@ -88,8 +88,11 @@ brew cask install postman
 brew cask install iterm2
 
 #Install java 8
-brew tap adoptopenjdk/openjdk
-brew cask install adoptopenjdk8
+#brew tap adoptopenjdk/openjdk
+#brew cask install adoptopenjdk8
+
+#TODO CHANGE JDK8 BY SDKMAN
+#https://sdkman.io/install
 
 # Remove outdated versions from the cellar.
 brew cleanup
