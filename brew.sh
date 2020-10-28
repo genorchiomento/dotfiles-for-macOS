@@ -86,6 +86,7 @@ brew cask install google-chrome
 brew cask install firefox
 brew cask install postman
 brew cask install iterm2
+brew cask install dbeaver-community
 
 #Install java 8
 #brew tap adoptopenjdk/openjdk
