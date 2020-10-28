@@ -40,6 +40,15 @@ alias gp="git push"
 alias gpt="git push --tags"
 alias gst="git status"
 
+# Aliases for docker commands
+alias dstopall='docker stop $(docker ps -a -q)'
+alias dstartall='docker start $(docker ps -a -q)'
+alias drall='docker rm $(docker ps -a -q)'
+alias dsc='docker ps -a'
+alias dsi='docker images'
+alias drc='docker rm'
+alias dri='docker rmi'
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
