@@ -1,5 +1,8 @@
 # Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/bash_profile.pre.bash" ]] && builtin source "$HOME/.fig/shell/bash_profile.pre.bash"
+if [[ -x "$HOME/.local/bin/fig" && -f "$HOME/.fig/shell/bash_profile.pre.bash" ]]
+then
+  builtin source "$HOME/.fig/shell/bash_profile.pre.bash"
+fi
 
 # Bash completion (skip when sourced from zsh)
 if [[ -z "$ZSH_VERSION" ]] && type brew &>/dev/null
@@ -16,7 +19,7 @@ then
   fi
 fi
 
-alias bash="code ~/.bash_profile"
+alias codebash="code ~/.bash_profile"
 alias resbash="source ~/.bash_profile"
 
 # Aliases for moving around
@@ -147,4 +150,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export PATH=$PATH:$HOME/bin:$HOME/.local/bin
 
 # Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/bash_profile.post.bash" ]] && builtin source "$HOME/.fig/shell/bash_profile.post.bash"
+if [[ -x "$HOME/.local/bin/fig" && -f "$HOME/.fig/shell/bash_profile.post.bash" ]]
+then
+  builtin source "$HOME/.fig/shell/bash_profile.post.bash"
+fi
